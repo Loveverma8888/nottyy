@@ -7,25 +7,25 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = int(getenv("API_ID", "19213073"))
+API_HASH = getenv("API_HASH", "4da5bf35f6c69f8c7b47ba5c0f1d99fc")
+BOT_TOKEN = getenv("BOT_TOKEN", "5502627863:AAF0Nuz6Lpv6z108Lwws4qag1hdynWgI2Eg")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://anonxmusic:anonxmusic@anonx.9v4i8.mongodb.net/?retryWrites=true&w=majority")
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001769179303"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ғᴀʟʟᴇɴ ダ ᴍᴜsɪᴄ")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴠᴇɴᴏᴍ ダ ᴍᴜsɪᴄ")
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1356469075").split())
+    map(int, getenv("OWNER_ID", "5156537452").split())
 )
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
+    "SUPPORT_CHANNEL", "https://t.me/Loves_A_Beatz_Shyari")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/DevilsHeavenMF")
+    "SUPPORT_GROUP", "https://t.me/venombot_support")
 
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "120")
+    getenv("DURATION_LIMIT", "1200000")
 )
 SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
@@ -77,7 +77,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQB4Fcl5KzDWBin9vqPaNCI0f7dyWx0_VedF7SAUQpcMFlFdTHyaU4cC1-XR9FFIw40ooWMBRfeAnvzszzwUSZJHfMLTQZXsNWGprJOM8EBEXTRG_7FchjAPhjxONyma-6i0vSTlPB-L9j0tMdcn_eGuftJFTAvaFz79CHFTMVgSwUx2xvP_G2ogiU2tVCJ2lPQbF4ER14q0BE_h7RQiR4sbCfYEatyw1wheWfqWszx_BNIv5oC99z6g3tWAP-O-XhijH-ubcx61f6njL4wmAiqC_Mvb7vYHpffPoEQyQvMMzhPmpZp3rCOZq3HitWxEx61kABBP-2oIaxQFBGTRDGHMAAAAAUQayDYA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)

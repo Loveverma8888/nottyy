@@ -17,7 +17,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001769179303"))
 
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴠᴇɴᴏᴍ ダ ᴍᴜsɪᴄ")
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5156537452").split())
+    map(int, getenv("OWNER_ID", "5437573174").split())
 )
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", "https://t.me/Loves_A_Beatz_Shyari")
